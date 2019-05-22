@@ -33,3 +33,6 @@ kubectl get pods
 
 # Redeploy the pod/app
 kubectl delete pod/linux-devops-agent-755bc5688d-64knh
+
+# Clean up your Kubernetes cluster from the previous steps.
+kubectl delete -f aks-devops-agent.yml

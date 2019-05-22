@@ -26,4 +26,4 @@ spec:
           - name: AZP_POOL
             value: DockerAgent
           - name: AZP_AGENT_NAME
-            value: mydockeragent6
+            value: mydockeragent
