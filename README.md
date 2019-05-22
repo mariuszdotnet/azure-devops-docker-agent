@@ -2,7 +2,7 @@
 
 1. Create and build the `Dockerfile`.
 
-2. Build a docker imaged based on your `DockerFile` and the `start.sh` script provide from [here](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/docker?view=azure-devops).
+2. Build a docker imaged based on your `DockerFile` and the `start.sh` script provided from [here](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/docker?view=azure-devops).
 
 3. push to a docker registry of your choosing.  You can find my DockerHub image here [mariuszdotnet/dockeragent](https://cloud.docker.com/repository/docker/mariuszdotnet/dockeragent).
 
