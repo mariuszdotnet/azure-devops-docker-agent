@@ -1,0 +1,29 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: linux-devops-agent
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: linux-devops-agent
+    spec:
+      containers:
+      - name: linux-devops-agent
+        image: mariuszdotnet/dockeragent:latest
+        env:
+          - name: AZP_URL
+            valueFrom:
+              secretKeyRef:
+                name: az-dev-secrets
+                key: AZP_URL
+          - name: AZP_TOKEN
+            valueFrom:
+              secretKeyRef:
+                name: az-dev-secrets
+                key: AZP_TOKEN
+          - name: AZP_POOL
+            value: DockerAgent
+          - name: AZP_AGENT_NAME
+            value: mydockeragent6
